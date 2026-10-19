@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Cycle — Smart E-Waste Collection, Segregation & Recycling Platform. Turn electronic waste into valuable resources.">
+    <meta name="theme-color" content="#1B4332">
+    <title>E-Cycle — Smart E-Waste Management Platform</title>
+
+    <!-- Typography: Inter font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION BAR ============ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Primary navigation">
+        <div class="container nav-inner">
+            <!-- Brand Mark & Title -->
+            <a href="#hero" class="brand" aria-label="E-Cycle Home">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <!-- Outer ring — circular economy -->
+                        <circle cx="20" cy="20" r="18" stroke="#40916C" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.5"/>
+                        <!-- Inner ring -->
+                        <circle cx="20" cy="20" r="12" stroke="#1B4332" stroke-width="2"/>
+                        <!-- Recycle arrows (3 nodes) -->
+                        <path d="M20 8 L23 13 L17 13 Z" fill="#40916C"/>
+                        <path d="M28.5 25 L25.5 20 L31.5 20 Z" fill="#40916C" transform="rotate(120 20 20)"/>
+                        <path d="M28.5 25 L25.5 20 L31.5 20 Z" fill="#40916C" transform="rotate(240 20 20)"/>
+                        <!-- Center dot -->
+                        <circle cx="20" cy="20" r="2.5" fill="#1B4332"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">E-<span>Cycle</span></span>
+                    <span class="brand-subtitle">Smart E-Waste Management</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" role="list">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#circular-economy" class="nav-link">Circular Economy</a></li>
+                <li><a href="#segregation" class="nav-link">Segregation</a></li>
+                <li><a href="#estimator" class="nav-link">Estimator</a></li>
+                <li><a href="#dashboard" class="nav-link">Analytics</a></li>
+                <li><a href="#records-section" class="nav-link">Records</a></li>
+            </ul>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <a href="#register" class="btn btn-primary btn-sm nav-cta-desktop">Register E-Waste</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Accessible Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu" role="menu">
+            <a href="#hero" class="nav-link active" role="menuitem">Home</a>
+            <a href="#how-it-works" class="nav-link" role="menuitem">How It Works</a>
+            <a href="#circular-economy" class="nav-link" role="menuitem">Circular Economy</a>
+            <a href="#segregation" class="nav-link" role="menuitem">Smart Segregation</a>
+            <a href="#estimator" class="nav-link" role="menuitem">Value Estimator</a>
+            <a href="#dashboard" class="nav-link" role="menuitem">Analytics Dashboard</a>
+            <a href="#records-section" class="nav-link" role="menuitem">Collection Records</a>
+            <a href="#register" class="btn btn-primary" role="menuitem">Register E-Waste</a>
+        </div>
+    </nav>
+
+
+    <!-- ============ HERO SECTION ============ -->
+    <header class="hero section" id="hero">
+        <div class="container hero-inner">
+            <div class="hero-content reveal-on-scroll">
+                <span class="section-tag">Sustainable Technology</span>
+                <h1 class="hero-title">
+                    Your Old Electronics.<br>
+                    <span class="highlight">A New Beginning.</span>
+                </h1>
+                <p class="hero-description">
+                    Give unwanted electronics a better next step. Register e-waste, discover
+                    responsible handling options, and explore how reuse and recycling can help
+                    recover valuable resources.
+                </p>
+                <div class="hero-actions">
+                    <a href="#register" class="btn btn-primary btn-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                        Register E-Waste
+                    </a>
+                    <a href="#how-it-works" class="btn btn-outline btn-lg">Explore How It Works</a>
+                </div>
+                <p class="hero-microcopy">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    Collect responsibly. Recover resources. Keep materials in use.
+                </p>
+            </div>
+
+            <!-- Hero Visual: Circular Economy Visual Composition -->
+            <div class="hero-visual reveal-on-scroll" aria-label="Circular economy workflow illustration">
+                <div class="hero-orbit-container">
+                    <!-- Rotating Orbit Rings -->
+                    <div class="hero-ring hero-ring-1"></div>
+                    <div class="hero-ring hero-ring-2"></div>
+                    <div class="hero-ring hero-ring-3"></div>
+
+                    <!-- Floating Pathway Badges -->
+                    <div class="orbit-badge orbit-badge-1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        Collection
+                    </div>
+                    <div class="orbit-badge orbit-badge-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        Reuse &amp; Repair
+                    </div>
+                    <div class="orbit-badge orbit-badge-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                        Recycling
+                    </div>
+
+                    <!-- Center Hub: Device & Leaf Motif -->
+                    <div class="hero-center-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="32" cy="32" r="28" stroke="#40916C" stroke-width="2" opacity="0.3"/>
+                            <circle cx="32" cy="32" r="20" fill="#D8F3DC"/>
+                            <!-- Smartphone silhouette -->
+                            <rect x="25" y="20" width="14" height="24" rx="2.5" fill="#1B4332"/>
+                            <rect x="27" y="23" width="10" height="15" rx="1" fill="#FFFFFF"/>
+                            <circle cx="32" cy="41" r="1" fill="#40916C"/>
+                            <!-- Eco leaf accent -->
+                            <path d="M35 17 C39 17 44 21 44 26 C39 26 35 22 35 17 Z" fill="#40916C"/>
+                        </svg>
+                    </div>
+
+                    <!-- Orbit Nodes -->
+                    <div class="orbit-node node-1" title="Collection Phase">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B4332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <div class="orbit-node node-2" title="Segregation & Classification">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B4332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div class="orbit-node node-3" title="Resource Recovery">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B4332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ============ SECTION 4: INTRODUCE THE PROBLEM ============ -->
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">The Challenge</span>
+                <h2 class="section-title">Small Devices. Big Responsibility.</h2>
+                <p class="section-subtitle">
+                    Old electronics can contain valuable materials, but improper disposal can
+                    also create environmental and safety risks.
+                </p>
+            </div>
+
+            <div class="problem-grid">
+                <!-- Card 1 -->
+                <article class="problem-card card-warning reveal-on-scroll">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                            <line x1="6" y1="6" x2="6.01" y2="6"/>
+                            <line x1="6" y1="18" x2="6.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Unused Electronics</h3>
+                    <p>
+                        Old phones, chargers, laptops, and accessories often remain unused
+                        because people do not know where to take them.
+                    </p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="problem-card card-danger reveal-on-scroll">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Incorrect Disposal</h3>
+                    <p>
+                        Improper handling can expose people and the environment to hazardous substances
+                        such as lead, mercury, and toxic flame retardants.
+                    </p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="problem-card card-success reveal-on-scroll">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
+                            <line x1="12" y1="22" x2="12" y2="15.5"/>
+                            <polyline points="22 8.5 12 15.5 2 8.5"/>
+                            <polyline points="2 15.5 12 8.5 22 15.5"/>
+                        </svg>
+                    </div>
+                    <h3>Recoverable Resources</h3>
+                    <p>
+                        Responsible reuse, repair, and recycling can extend product life
+                        and help recover useful materials such as copper, aluminum, and precious metals.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 5: HOW E-CYCLE WORKS ============ -->
+    <section class="section" id="how-it-works" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border-light); border-bottom: 1px solid var(--color-border-light);">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">From Unused Electronics to Useful Resources</h2>
+                <p class="section-subtitle">
+                    A structured, transparent workflow designed to guide every piece of electronic
+                    equipment toward its highest circular value.
+                </p>
+            </div>
+
+            <div class="steps-workflow">
+                <!-- Step 01 -->
+                <div class="step-card active-step reveal-on-scroll">
+                    <div class="step-card-header">
+                        <span class="step-number">STEP 01</span>
+                        <div class="step-icon-box" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+                                <line x1="12" y1="12" x2="12" y2="16"/>
+                                <line x1="10" y1="14" x2="14" y2="14"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>COLLECT</h3>
+                    <p>
+                        Register unwanted electronics and record their condition and weight.
+                    </p>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="step-card reveal-on-scroll">
+                    <div class="step-card-header">
+                        <span class="step-number">STEP 02</span>
+                        <div class="step-icon-box" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>IDENTIFY</h3>
+                    <p>
+                        Classify each item and identify an appropriate next step.
+                    </p>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="step-card reveal-on-scroll">
+                    <div class="step-card-header">
+                        <span class="step-number">STEP 03</span>
+                        <div class="step-icon-box" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 4 23 10 17 10"/>
+                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>RECOVER</h3>
+                    <p>
+                        Prioritize suitable reuse or repair, followed by responsible recycling when necessary.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 6: CIRCULAR ECONOMY WORKFLOW ============ -->
+    <section class="section ce-section" id="circular-economy">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">CIRCULAR ECONOMY WORKFLOW</span>
+                <h2 class="section-title">Give Electronics a Second Life</h2>
+                <p class="section-subtitle">
+                    Every electronic item has a journey. By identifying opportunities
+                    for reuse, repair, refurbishment, and responsible recycling, we can
+                    help keep useful resources in circulation.
+                </p>
+            </div>
+
+            <div class="ce-workflow-container">
+                <!-- 1. Interactive Lifecycle Diagram Card -->
+                <div class="ce-lifecycle-card reveal-on-scroll">
+                    <div class="ce-lifecycle-header">
+                        <h3>Resource Lifecycle &amp; Decision Hierarchy</h3>
+                        <p class="text-muted" style="font-size: var(--fs-sm);">
+                            Trace how devices move from original manufacture to condition-based circular loops. Click any pathway to preview handling actions.
+                        </p>
+                    </div>
+
+                    <!-- Diagram Flow Structure -->
+                    <div class="ce-flow-vertical">
+                        <div class="ce-flow-step-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            <span>1. ELECTRONIC PRODUCT (Manufacture)</span>
+                        </div>
+                        <div class="ce-flow-arrow">&darr;</div>
+                        <div class="ce-flow-step-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span>2. USE (Active Device Utilization)</span>
+                        </div>
+                        <div class="ce-flow-arrow">&darr;</div>
+                        <div class="ce-flow-step-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                            <span>3. COLLECTION (E-Cycle Registration)</span>
+                        </div>
+                        <div class="ce-flow-arrow">&darr;</div>
+                        <div class="ce-flow-step-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            <span>4. ASSESSMENT (Diagnostic &amp; Physical Inspection)</span>
+                        </div>
+                        <div class="ce-flow-arrow">&darr;</div>
+                        <div class="ce-flow-step-box" style="border-color: var(--color-accent); background: var(--color-accent-subtle);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v6m0 6v6m9-9h-6m-6 0H3"/></svg>
+                            <span>5. CONDITION-BASED DECISION</span>
+                        </div>
+                    </div>
+
+                    <!-- 4 Main Circular Pathways Grid -->
+                    <div class="ce-pathway-nodes-grid" role="region" aria-label="Circular Pathways Selection">
+                        <button type="button" class="ce-node-btn active" data-pathway-key="REUSE" aria-pressed="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h14"/><path d="M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H3"/></svg>
+                            <span class="node-title">REUSE</span>
+                            <span class="node-sub">Direct Secondary Use</span>
+                        </button>
+                        <button type="button" class="ce-node-btn" data-pathway-key="REPAIR" aria-pressed="false">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                            <span class="node-title">REPAIR</span>
+                            <span class="node-sub">Technical Restoration</span>
+                        </button>
+                        <button type="button" class="ce-node-btn" data-pathway-key="REFURBISH" aria-pressed="false">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                            <span class="node-title">REFURBISH</span>
+                            <span class="node-sub">Inspection &amp; Renewal</span>
+                        </button>
+                        <button type="button" class="ce-node-btn" data-pathway-key="AUTHORIZED_RECYCLING" aria-pressed="false">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                            <span class="node-title">RECYCLE</span>
+                            <span class="node-sub">Material Recovery</span>
+                        </button>
+                    </div>
+
+                    <!-- Special Handling & Manual Review Quick Switchers -->
+                    <div style="display: flex; gap: var(--space-3); justify-content: center; margin-top: var(--space-4); flex-wrap: wrap;">
+                        <button type="button" class="btn btn-outline btn-xs ce-node-btn" data-pathway-key="SPECIAL_HANDLING" style="min-height: auto; padding: 6px 14px; flex-direction: row; border-radius: var(--radius-full);">
+                            <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #EF4444;"></span>
+                            <span>Special Handling (Batteries)</span>
+                        </button>
+                        <button type="button" class="btn btn-outline btn-xs ce-node-btn" data-pathway-key="MANUAL_REVIEW" style="min-height: auto; padding: 6px 14px; flex-direction: row; border-radius: var(--radius-full);">
+                            <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #64748B;"></span>
+                            <span>Manual Review (Unknowns)</span>
+                        </button>
+                    </div>
+
+                    <!-- Safety Priority Callout Banner -->
+                    <div class="ce-priority-alert" role="note">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        <div>
+                            <strong>Safety-First Hierarchy:</strong> For battery and other safety-sensitive items, dedicated special handling requirements take absolute priority over ordinary reuse or recycling streams. Never puncture, crush, or disassemble batteries.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Reusable Pathway Information Panel (Dynamic) -->
+                <div class="ce-pathway-panel reveal-on-scroll" id="cePathwayInfoPanel">
+                    <div class="ce-panel-header">
+                        <div>
+                            <span class="ce-panel-badge pathway-reuse">Priority 1 • Direct Reuse</span>
+                            <h3 class="ce-panel-title" style="margin-top: 4px;">Keep Useful Electronics in Use</h3>
+                        </div>
+                        <span class="text-muted" style="font-size: var(--fs-xs);">Interactive Pathway Guidance</span>
+                    </div>
+                    <p class="ce-panel-desc">
+                        Working electronics may continue to serve their current owner or another user, provided the item is suitable for reuse.
+                    </p>
+                    <h4 style="font-size: var(--fs-sm); font-weight: var(--fw-bold); margin-bottom: var(--space-3); color: var(--color-primary);">Recommended Circular Actions:</h4>
+                    <ul class="ce-panel-actions-list">
+                        <!-- Populated dynamically by circular.js -->
+                        <li class="ce-action-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="action-check-icon" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Continue using the item.</span>
+                        </li>
+                    </ul>
+                    <div class="ce-panel-safety-alert" style="display: none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        <span class="alert-text"></span>
+                    </div>
+                </div>
+
+                <!-- 3. Item Journey Tracker ("Explore an Item's Journey") -->
+                <div class="ce-journey-panel reveal-on-scroll">
+                    <div class="section-header" style="text-align: left; margin-bottom: var(--space-6);">
+                        <span class="section-tag">Traceability Tracker</span>
+                        <h3 class="section-title" style="font-size: var(--fs-xl);">Explore an Item's Journey</h3>
+                        <p class="section-subtitle" style="font-size: var(--fs-sm); margin: 0;">
+                            Select any registered electronic item from actual records saved in this prototype to view its circular workflow stages and classification pathway.
+                        </p>
+                    </div>
+
+                    <!-- Searchable Item Selector -->
+                    <div class="ce-selector-row">
+                        <input type="text" 
+                               id="ceItemSearch" 
+                               class="form-input" 
+                               placeholder="Search registered items by ID, name or category..." 
+                               aria-label="Filter registered item selector">
+                        <select id="ceItemSelect" class="form-select" aria-label="Select collection item to view journey">
+                            <option value="">Loading registered items...</option>
+                        </select>
+                    </div>
+
+                    <!-- Empty State (When no records registered yet) -->
+                    <div id="ceJourneyEmpty" class="empty-state" style="display: none; padding: var(--space-8);">
+                        <div class="empty-state-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+                        </div>
+                        <h3>No Registered Items in Session</h3>
+                        <p class="text-muted" style="max-width: 480px; margin: 0 auto var(--space-4);">
+                            You must register an electronic item in the collection module first before its circular economy journey can be tracked.
+                        </p>
+                        <a href="#register" class="btn btn-primary btn-sm">Register First Item</a>
+                    </div>
+
+                    <!-- Content Panel (When item is selected) -->
+                    <div id="ceJourneyContent">
+                        <!-- Selected Item Profile Card -->
+                        <div class="ce-item-profile-card">
+                            <div class="ce-item-meta-grid">
+                                <div class="ce-meta-field">
+                                    <label>Collection ID</label>
+                                    <span id="ceItemId" class="record-id-badge" style="font-size: var(--fs-xs);">-</span>
+                                </div>
+                                <div class="ce-meta-field">
+                                    <label>Item Name</label>
+                                    <span id="ceItemName">-</span>
+                                </div>
+                                <div class="ce-meta-field">
+                                    <label>Category</label>
+                                    <span id="ceItemCategory">-</span>
+                                </div>
+                                <div class="ce-meta-field">
+                                    <label>Reported Condition</label>
+                                    <span id="ceItemConditionBadge" class="badge badge-info">-</span>
+                                </div>
+                                <div class="ce-meta-field">
+                                    <label>Recorded Weight</label>
+                                    <span id="ceItemWeight">-</span>
+                                </div>
+                                <div class="ce-meta-field">
+                                    <label>Current Status</label>
+                                    <span id="ceItemStatus" class="badge badge-success">-</span>
+                                </div>
+                                <div class="ce-meta-field" style="grid-column: span 2;">
+                                    <label>Recommended Pathway</label>
+                                    <span id="ceItemPathwayBadge" class="pathway-pill pathway-reuse">-</span>
+                                </div>
+                            </div>
+
+                            <div style="background: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-lg); border: 1px solid var(--color-border-light);">
+                                <h4 id="ceItemRecTitle" style="font-size: var(--fs-sm); font-weight: var(--fw-bold); color: var(--color-primary); margin: 0 0 4px;">-</h4>
+                                <p id="ceItemRecReason" style="font-size: var(--fs-xs); color: var(--color-text-secondary); margin: 0; line-height: 1.5;">-</p>
+                            </div>
+
+                            <!-- Safety Guidance Alert Box -->
+                            <div class="ce-priority-alert" id="ceItemSafetyBox" style="display: none; margin-top: var(--space-4);" role="alert">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                <div>
+                                    <strong>Handling Safety Guidance:</strong>
+                                    <div id="ceItemSafetyText" style="margin-top: 2px;">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 Workflow Stages Tracker -->
+                        <h4 style="font-size: var(--fs-sm); font-weight: var(--fw-bold); color: var(--color-primary); margin-bottom: var(--space-2);">Lifecycle Workflow Progression</h4>
+                        <p class="text-muted" style="font-size: var(--fs-xs); margin-bottom: var(--space-4);">
+                            Distinguishing system triage recommendations from verified physical real-world operations.
+                        </p>
+                        <div class="ce-stages-tracker">
+                            <!-- Stage 1 -->
+                            <div class="ce-stage-card completed">
+                                <div class="ce-stage-header">
+                                    <span class="ce-stage-num">STAGE 1</span>
+                                    <span class="ce-stage-status-badge badge-done" id="ceStage1Status">Completed</span>
+                                </div>
+                                <h5 class="ce-stage-title">REGISTERED</h5>
+                                <div class="ce-stage-meta" id="ceStage1Meta">The item has been entered into the E-Cycle prototype.</div>
+                            </div>
+
+                            <!-- Stage 2 -->
+                            <div class="ce-stage-card completed">
+                                <div class="ce-stage-header">
+                                    <span class="ce-stage-num">STAGE 2</span>
+                                    <span class="ce-stage-status-badge badge-done" id="ceStage2Status">Completed</span>
+                                </div>
+                                <h5 class="ce-stage-title">CLASSIFIED</h5>
+                                <div class="ce-stage-meta" id="ceStage2Meta">The application has evaluated the recorded category and condition.</div>
+                            </div>
+
+                            <!-- Stage 3 -->
+                            <div class="ce-stage-card completed">
+                                <div class="ce-stage-header">
+                                    <span class="ce-stage-num">STAGE 3</span>
+                                    <span class="ce-stage-status-badge badge-done" id="ceStage3Status">Generated</span>
+                                </div>
+                                <h5 class="ce-stage-title">RECOMMENDED PATHWAY</h5>
+                                <div class="ce-stage-meta" id="ceStage3Meta">The classification engine has suggested an appropriate next step.</div>
+                            </div>
+
+                            <!-- Stage 4 -->
+                            <div class="ce-stage-card suggested">
+                                <div class="ce-stage-header">
+                                    <span class="ce-stage-num">STAGE 4</span>
+                                    <span class="ce-stage-status-badge badge-next" id="ceStage4Status">Suggested Action</span>
+                                </div>
+                                <h5 class="ce-stage-title">FUTURE ACTION</h5>
+                                <div class="ce-stage-meta" id="ceStage4Meta">Awaiting real-world action (contact authorized collection or recycler). Physical operation is not verified.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Environmental Benefits Section -->
+                <div>
+                    <div class="section-header reveal-on-scroll">
+                        <span class="section-tag">Impact &amp; Sustainability</span>
+                        <h3 class="section-title" style="font-size: var(--fs-xl);">Why Circular E-Waste Management Matters</h3>
+                        <p class="section-subtitle" style="font-size: var(--fs-sm);">
+                            Shifting from disposable electronics to managed recovery keeps critical raw materials in active industrial service.
+                        </p>
+                    </div>
+
+                    <div class="ce-benefits-grid reveal-on-scroll">
+                        <!-- Card 1 -->
+                        <div class="ce-benefit-card">
+                            <div class="ce-benefit-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <h4>EXTEND PRODUCT LIFE</h4>
+                            <p>Reuse, repair, and refurbishment can help keep suitable electronics useful for longer.</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="ce-benefit-card">
+                            <div class="ce-benefit-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                            </div>
+                            <h4>RECOVER RESOURCES</h4>
+                            <p>Appropriate recycling can help recover valuable materials from electronic products.</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="ce-benefit-card">
+                            <div class="ce-benefit-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h4>SUPPORT RESPONSIBLE DISPOSAL</h4>
+                            <p>Suitable collection and processing channels help ensure that electronic waste is handled more appropriately.</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="ce-benefit-card">
+                            <div class="ce-benefit-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <h4>BUILD AWARENESS</h4>
+                            <p>Clear item records and recommendations can help people make better-informed decisions about unwanted electronics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Linear vs Circular Model Education Section -->
+                <div class="reveal-on-scroll">
+                    <div class="section-header" style="margin-bottom: var(--space-4);">
+                        <span class="section-tag">System Architecture Comparison</span>
+                        <h3 class="section-title" style="font-size: var(--fs-xl);">Linear vs. Circular Approaches</h3>
+                    </div>
+
+                    <div class="ce-comparison-grid">
+                        <!-- Linear Model Card -->
+                        <div class="ce-model-card linear">
+                            <div class="ce-model-header">
+                                <span class="ce-model-badge">Traditional Linear Model</span>
+                                <h4 style="font-size: var(--fs-base); font-weight: var(--fw-bold); color: #991B1B; margin: 4px 0;">Take &rarr; Make &rarr; Dispose</h4>
+                            </div>
+                            <div class="ce-model-flow">
+                                Manufacture &rarr; Use &rarr; Dispose
+                            </div>
+                            <p style="font-size: var(--fs-sm); color: var(--color-text-secondary); line-height: 1.6; margin: 0;">
+                                Electronic devices are manufactured from finite raw minerals, sold, used for a brief period, and dumped into landfill sites or incinerators, discarding valuable recoverable metals and risking toxic heavy-metal contamination.
+                            </p>
+                        </div>
+
+                        <!-- Circular Model Card -->
+                        <div class="ce-model-card circular">
+                            <div class="ce-model-header">
+                                <span class="ce-model-badge">E-Cycle Circular Model</span>
+                                <h4 style="font-size: var(--fs-base); font-weight: var(--fw-bold); color: var(--color-primary); margin: 4px 0;">Recover &rarr; Restore &rarr; Regenerate</h4>
+                            </div>
+                            <div class="ce-model-flow">
+                                Manufacture &rarr; Use &rarr; Reuse/Repair &rarr; Further Use &rarr; Appropriate Recycling &rarr; Material Recovery
+                            </div>
+                            <p style="font-size: var(--fs-sm); color: var(--color-text-secondary); line-height: 1.6; margin: 0;">
+                                Recycling is essential, but retaining useful devices through reuse and repair prevents unnecessary waste more effectively. Materials that reach end-of-life undergo authorized recovery to feed back into manufacturing loops.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 7: APPLICATION FEATURES PREVIEW ============ -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">Platform Modules</span>
+                <h2 class="section-title">One Platform. A Smarter E-Waste Journey.</h2>
+                <p class="section-subtitle">
+                    Explore the connected modules engineered to provide complete traceability,
+                    smart classification, and value estimation.
+                </p>
+            </div>
+
+            <div class="preview-grid-4">
+                <!-- Card 1: Collection Registration -->
+                <article class="feature-preview-card reveal-on-scroll">
+                    <div>
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+                                <line x1="12" y1="12" x2="12" y2="16"/>
+                                <line x1="10" y1="14" x2="14" y2="14"/>
+                            </svg>
+                        </div>
+                        <h3>Collection Registration</h3>
+                        <p>
+                            Record electronic items and generate a unique collection ID.
+                        </p>
+                    </div>
+                    <div class="feature-preview-footer">
+                        <a href="#register" class="badge badge-success">Active Module &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 2: Smart Segregation -->
+                <article class="feature-preview-card reveal-on-scroll">
+                    <div>
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <h3>Smart Segregation</h3>
+                        <p>
+                            Use item categories and condition-based rules to suggest handling.
+                        </p>
+                    </div>
+                    <div class="feature-preview-footer">
+                        <a href="#segregation" class="badge badge-success">Active Module &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 3: Value Estimation -->
+                <article class="feature-preview-card reveal-on-scroll">
+                    <div>
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>Value Estimation</h3>
+                        <p>
+                            Estimate potential recovery value from recorded weights and illustrative rates.
+                        </p>
+                    </div>
+                    <div class="feature-preview-footer">
+                        <span class="badge badge-info">Preview Module</span>
+                    </div>
+                </article>
+
+                <!-- Card 4: Impact Dashboard -->
+                <article class="feature-preview-card reveal-on-scroll">
+                    <div>
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                        </div>
+                        <h3>Impact Dashboard</h3>
+                        <p>
+                            Track registered items, recorded weights, and processing statuses.
+                        </p>
+                    </div>
+                    <div class="feature-preview-footer">
+                        <span class="badge badge-info">Preview Module</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 8: RESPONSIBLE DISPOSAL CTA ============ -->
+    <section class="section" id="impact">
+        <div class="container">
+            <div class="cta-wrapper reveal-on-scroll">
+                <div class="cta-content">
+                    <span class="cta-tag">Take Action</span>
+                    <h2 class="cta-title">Ready to Give Your Old Electronics a Better Next Step?</h2>
+                    <p class="cta-desc">
+                        Start by identifying your unused electronics and exploring
+                        responsible reuse or recycling options.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="#register" class="btn cta-btn-white btn-lg">Register E-Waste</a>
+                        <a href="#circular-economy" class="btn cta-btn-secondary btn-lg">Learn About Responsible Disposal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 9: E-WASTE COLLECTION REGISTRATION MODULE ============ -->
+    <section class="section collection-section" id="register">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">Module 01 &bull; Collection</span>
+                <h2 class="section-title">Register Your E-Waste</h2>
+                <p class="section-subtitle">
+                    Record unused electronics and identify an appropriate next step
+                    toward reuse, repair, or responsible recycling.
+                </p>
+            </div>
+
+            <!-- Form Card Container -->
+            <div class="collection-form-card reveal-on-scroll" id="formCard">
+                <!-- Informational guidance callout -->
+                <div class="form-info-callout" role="note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    <div>
+                        <strong>Please record items accurately.</strong> Batteries and damaged electronics may require separate handling.
+                    </div>
+                </div>
+
+                <!-- Global Storage Error Alert -->
+                <div id="formGlobalError" class="form-error-msg" style="margin-bottom: var(--space-4); text-align: center; font-size: var(--fs-sm);" role="alert"></div>
+
+                <!-- Dynamic Safety Alert for Batteries / Damaged Items -->
+                <div class="safety-notice-banner" id="safetyNotice" style="display: none;" role="alert">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <div class="safety-notice-text">
+                        Safety Notice: Batteries and damaged electronics require specialized handling to prevent thermal and chemical hazards. Keep away from combustible materials and transport safely to an authorized facility.
+                    </div>
+                </div>
+
+                <!-- Collection Registration Form -->
+                <form id="collectionForm" novalidate aria-label="E-Waste Collection Form">
+                    <!-- Row 1: Item Name & Category -->
+                    <div class="form-grid-2">
+                        <!-- A. Item Name -->
+                        <div class="form-group">
+                            <label for="itemName" class="form-label required">Item Name</label>
+                            <input 
+                                type="text" 
+                                id="itemName" 
+                                name="itemName" 
+                                class="form-input" 
+                                placeholder="e.g., Old laptop, Mobile phone, Keyboard, Charger" 
+                                maxlength="80" 
+                                required
+                                aria-required="true"
+                                aria-describedby="err-itemName hint-itemName"
+                            >
+                            <span class="form-hint" id="hint-itemName">Specify device brand or model if known (max 80 chars)</span>
+                            <span class="form-error-msg" id="err-itemName" role="alert"></span>
+                        </div>
+
+                        <!-- B. E-Waste Category -->
+                        <div class="form-group">
+                            <label for="category" class="form-label required">E-Waste Category</label>
+                            <select 
+                                id="category" 
+                                name="category" 
+                                class="form-select" 
+                                required
+                                aria-required="true"
+                                aria-describedby="err-category"
+                            >
+                                <option value="" disabled selected>Select an e-waste category</option>
+                                <option value="Mobile Phones">Mobile Phones</option>
+                                <option value="Computers and Laptops">Computers and Laptops</option>
+                                <option value="Computer Peripherals">Computer Peripherals</option>
+                                <option value="Chargers and Cables">Chargers and Cables</option>
+                                <option value="Batteries">Batteries</option>
+                                <option value="Small Household Electronics">Small Household Electronics</option>
+                                <option value="Circuit Boards and Components">Circuit Boards and Components</option>
+                                <option value="Other Electronic Waste">Other Electronic Waste</option>
+                            </select>
+                            <span class="form-error-msg" id="err-category" role="alert"></span>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Quantity & Weight -->
+                    <div class="form-grid-2">
+                        <!-- C. Quantity -->
+                        <div class="form-group">
+                            <label for="quantity" class="form-label required">Quantity</label>
+                            <input 
+                                type="number" 
+                                id="quantity" 
+                                name="quantity" 
+                                class="form-input" 
+                                min="1" 
+                                max="100" 
+                                step="1" 
+                                value="1" 
+                                required
+                                aria-required="true"
+                                aria-describedby="err-quantity"
+                            >
+                            <span class="form-error-msg" id="err-quantity" role="alert"></span>
+                        </div>
+
+                        <!-- D. Total Weight -->
+                        <div class="form-group">
+                            <label for="weightKg" class="form-label required">Total Weight (kg)</label>
+                            <input 
+                                type="number" 
+                                id="weightKg" 
+                                name="weightKg" 
+                                class="form-input" 
+                                min="0.01" 
+                                max="500" 
+                                step="0.01" 
+                                placeholder="e.g., 1.85" 
+                                required
+                                aria-required="true"
+                                aria-describedby="err-weightKg"
+                            >
+                            <span class="form-hint">Estimated weight in kilograms (decimals accepted)</span>
+                            <span class="form-error-msg" id="err-weightKg" role="alert"></span>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Condition & Collection Preference -->
+                    <div class="form-grid-2">
+                        <!-- E. Item Condition -->
+                        <div class="form-group">
+                            <label for="condition" class="form-label required">Item Condition</label>
+                            <select 
+                                id="condition" 
+                                name="condition" 
+                                class="form-select" 
+                                required
+                                aria-required="true"
+                                aria-describedby="err-condition"
+                            >
+                                <option value="" disabled selected>Select condition</option>
+                                <option value="Working">Working</option>
+                                <option value="Repairable">Repairable</option>
+                                <option value="Damaged / Non-working">Damaged / Non-working</option>
+                                <option value="Unknown">Unknown</option>
+                            </select>
+                            <span class="form-error-msg" id="err-condition" role="alert"></span>
+                        </div>
+
+                        <!-- F. Collection Preference -->
+                        <div class="form-group">
+                            <label for="collectionPreference" class="form-label required">Collection Preference</label>
+                            <select 
+                                id="collectionPreference" 
+                                name="collectionPreference" 
+                                class="form-select" 
+                                required
+                                aria-required="true"
+                                aria-describedby="err-collectionPreference hint-pref"
+                            >
+                                <option value="" disabled selected>Select collection preference</option>
+                                <option value="I will take it to a collection point.">I will take it to a collection point.</option>
+                                <option value="I want to explore a pickup option.">I want to explore a pickup option.</option>
+                            </select>
+                            <span class="form-hint" id="hint-pref">Indicates user preference only &mdash; no transport booking is created</span>
+                            <span class="form-error-msg" id="err-collectionPreference" role="alert"></span>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Optional Notes -->
+                    <div class="form-grid-1">
+                        <div class="form-group">
+                            <label for="notes" class="form-label">Optional Notes</label>
+                            <textarea 
+                                id="notes" 
+                                name="notes" 
+                                class="form-textarea" 
+                                maxlength="400" 
+                                rows="3" 
+                                placeholder="Mention any extra details such as cracked screen, missing adapter, or battery state..."
+                                aria-describedby="notesCounter"
+                            ></textarea>
+                            <div class="char-counter-wrapper" id="notesCounter">
+                                <span class="form-hint">Optional context for segregation analysis</span>
+                                <span class="char-counter"><span id="charCount">400</span> characters remaining</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Privacy Confirmation -->
+                    <div class="checkbox-group">
+                        <input 
+                            type="checkbox" 
+                            id="privacyConfirm" 
+                            name="privacyConfirm" 
+                            required
+                            aria-required="true"
+                            aria-describedby="err-privacyConfirm"
+                        >
+                        <label for="privacyConfirm" class="checkbox-label">
+                            I confirm that the item details provided are accurate.
+                        </label>
+                    </div>
+                    <span class="form-error-msg" id="err-privacyConfirm" style="margin-top: -1.5rem; margin-bottom: 1.5rem;" role="alert"></span>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Register Item
+                        </button>
+                        <button type="reset" class="btn btn-outline btn-lg" id="resetBtn">
+                            Reset Form
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Success State Panel (Revealed after successful submission) -->
+            <div class="success-card reveal-on-scroll" id="successPanel" style="display: none;" role="region" aria-live="polite">
+                <div class="success-badge-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <h3 class="success-title">Your E-Waste Record Has Been Created!</h3>
+                <p class="success-subtitle">
+                    Your item has been registered in the E-Cycle prototype.
+                    You can review the record and continue to the segregation stage.
+                </p>
+
+                <!-- Record Metadata Summary -->
+                <div class="success-meta-grid">
+                    <div class="success-meta-item">
+                        <span class="meta-label">Collection ID</span>
+                        <span class="meta-value-mono" id="resId">EW-20261019-XXXXXX</span>
+                    </div>
+                    <div class="success-meta-item">
+                        <span class="meta-label">Status</span>
+                        <span class="meta-value"><span class="badge badge-success"><span class="status-dot active"></span> Registered</span></span>
+                    </div>
+                    <div class="success-meta-item">
+                        <span class="meta-label">Item Name</span>
+                        <span class="meta-value" id="resItemName">-</span>
+                    </div>
+                    <div class="success-meta-item">
+                        <span class="meta-label">Category</span>
+                        <span class="meta-value" id="resCategory">-</span>
+                    </div>
+                    <div class="success-meta-item">
+                        <span class="meta-label">Quantity &bull; Weight</span>
+                        <span class="meta-value" id="resQuantityWeight">-</span>
+                    </div>
+                    <div class="success-meta-item">
+                        <span class="meta-label">Condition</span>
+                        <span class="meta-value" id="resCondition">-</span>
+                    </div>
+                    <div class="success-meta-item" style="grid-column: 1 / -1;">
+                        <span class="meta-label">Preference</span>
+                        <span class="meta-value" id="resPreference" style="font-weight: var(--fw-regular); font-size: var(--fs-sm);">-</span>
+                    </div>
+                </div>
+
+                <!-- Handling Reminder for Batteries/Damaged Items -->
+                <div class="safety-notice-banner" id="resSafetyAlert" style="display: none; margin-bottom: var(--space-6); text-align: left;" role="alert">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <div>
+                        <strong>Handling Advisory:</strong> This item is categorized as a battery or damaged electronic. Please handle with care and keep in a non-flammable area before delivering to an authorized e-waste drop-off center.
+                    </div>
+                </div>
+
+                <!-- Next step explanation -->
+                <div class="success-next-step-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 16 16 12 12 8"/>
+                        <line x1="8" y1="12" x2="16" y2="12"/>
+                    </svg>
+                    <div>
+                        <strong>Next Step in Circular Workflow:</strong>
+                        This record is prepared for the <em>Smart Segregation Engine (Step 4)</em>, which will evaluate condition parameters and recommend the optimal circular pathway (Reuse, Repair, Refurbish, or Recycle).
+                    </div>
+                </div>
+
+                <!-- Action buttons -->
+                <div class="success-actions">
+                    <button type="button" class="btn btn-primary" id="btnViewRecord">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        View Collection Record
+                    </button>
+                    <a href="#segregation" class="btn btn-outline" id="btnGoToSegregation">
+                        View in Smart Segregation &rarr;
+                    </a>
+                    <button type="button" class="btn btn-outline" id="btnRegisterAnother">
+                        Register Another Item
+                    </button>
+                    <button type="button" class="btn btn-ghost" id="btnViewAllRecords">
+                        View All Records &darr;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 10: COLLECTION RECORDS LIST ============ -->
+    <section class="section records-section" id="records-section">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">Audit &amp; Traceability</span>
+                <h2 class="section-title">Registered Collection Records</h2>
+                <p class="section-subtitle">
+                    Review all registered electronic items saved locally in this prototype session.
+                </p>
+            </div>
+
+            <!-- Toolbar: Search, Filters, and Count -->
+            <div class="records-toolbar reveal-on-scroll">
+                <div class="records-search-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="recordSearch" 
+                        class="form-input records-search-input" 
+                        placeholder="Search by ID or Item Name..." 
+                        aria-label="Search collection records by ID or Item Name"
+                    >
+                </div>
+
+                <div class="records-filters">
+                    <!-- Category filter -->
+                    <select id="categoryFilter" class="form-select" style="width: auto; min-width: 170px;" aria-label="Filter by e-waste category">
+                        <option value="">All Categories</option>
+                        <option value="Mobile Phones">Mobile Phones</option>
+                        <option value="Computers and Laptops">Computers and Laptops</option>
+                        <option value="Computer Peripherals">Computer Peripherals</option>
+                        <option value="Chargers and Cables">Chargers and Cables</option>
+                        <option value="Batteries">Batteries</option>
+                        <option value="Small Household Electronics">Small Household Electronics</option>
+                        <option value="Circuit Boards and Components">Circuit Boards and Components</option>
+                        <option value="Other Electronic Waste">Other Electronic Waste</option>
+                    </select>
+
+                    <!-- Status filter -->
+                    <select id="statusFilter" class="form-select" style="width: auto; min-width: 140px;" aria-label="Filter by status">
+                        <option value="">All Statuses</option>
+                        <option value="Registered">Registered</option>
+                    </select>
+
+                    <button type="button" class="btn btn-outline btn-sm" id="resetFiltersBtn">Reset</button>
+
+                    <div class="records-action-group">
+                        <button type="button" class="btn btn-outline btn-sm" id="exportRecordsBtn" title="Export records to JSON file">Export JSON</button>
+                        <button type="button" class="btn btn-outline btn-sm" id="importRecordsBtn" title="Import records from JSON file">Import JSON</button>
+                        <input type="file" id="importRecordsInput" accept=".json" style="display: none;" aria-hidden="true">
+                    </div>
+
+                    <span class="records-count-badge">
+                        Showing <strong id="recordsCount">0</strong> records
+                    </span>
+                </div>
+            </div>
+
+            <!-- Dynamic Records Container (populated by collection.js) -->
+            <div id="recordsContainer" class="reveal-on-scroll" aria-live="polite">
+                <!-- Records table / mobile cards will render here -->
+            </div>
+
+            <div style="text-align: center; margin-top: var(--space-8);">
+                <a href="#register" class="btn btn-outline btn-sm">
+                    &uarr; Back to Registration Form
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 11: SMART E-WASTE SEGREGATION ENGINE ============ -->
+    <section class="section segregation-section" id="segregation">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">Module 02 &bull; Classification</span>
+                <h2 class="section-title">Smart E-Waste Segregation</h2>
+                <p class="section-subtitle">
+                    Identify electronic waste categories and determine an appropriate next step based on item condition and handling requirements.
+                </p>
+            </div>
+
+            <!-- Summary Metrics Cards (derived from real records) -->
+            <div class="segregation-metrics-grid reveal-on-scroll">
+                <div class="seg-metric-card">
+                    <div class="seg-metric-icon icon-blue" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <div class="seg-metric-data">
+                        <span class="seg-metric-num" id="metricTotal">0</span>
+                        <span class="seg-metric-label">Total Registered Items</span>
+                    </div>
+                </div>
+
+                <div class="seg-metric-card">
+                    <div class="seg-metric-icon icon-amber" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                    </div>
+                    <div class="seg-metric-data">
+                        <span class="seg-metric-num" id="metricPending">0</span>
+                        <span class="seg-metric-label">Items Awaiting Classification</span>
+                    </div>
+                </div>
+
+                <div class="seg-metric-card">
+                    <div class="seg-metric-icon icon-green" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h14"/><path d="M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H3"/></svg>
+                    </div>
+                    <div class="seg-metric-data">
+                        <span class="seg-metric-num" id="metricReuseRepair">0</span>
+                        <span class="seg-metric-label">Recommended for Reuse / Repair</span>
+                    </div>
+                </div>
+
+                <div class="seg-metric-card">
+                    <div class="seg-metric-icon icon-purple" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                    </div>
+                    <div class="seg-metric-data">
+                        <span class="seg-metric-num" id="metricRecycling">0</span>
+                        <span class="seg-metric-label">Recommended for Recycling</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toolbar: Search, Category, Condition, Pathway, and Status Filters -->
+            <div class="records-toolbar reveal-on-scroll">
+                <div class="records-search-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="segSearch" 
+                        class="form-input records-search-input" 
+                        placeholder="Search by ID or Item Name..." 
+                        aria-label="Search items by ID or Name"
+                    >
+                </div>
+
+                <div class="records-filters">
+                    <!-- Category filter -->
+                    <select id="segCategoryFilter" class="form-select" style="width: auto; min-width: 150px;" aria-label="Filter by Category">
+                        <option value="">All Categories</option>
+                        <option value="Mobile Phones">Mobile Phones</option>
+                        <option value="Computers and Laptops">Computers and Laptops</option>
+                        <option value="Computer Peripherals">Computer Peripherals</option>
+                        <option value="Chargers and Cables">Chargers and Cables</option>
+                        <option value="Batteries">Batteries</option>
+                        <option value="Small Household Electronics">Small Household Electronics</option>
+                        <option value="Circuit Boards and Components">Circuit Boards and Components</option>
+                        <option value="Other Electronic Waste">Other Electronic Waste</option>
+                    </select>
+
+                    <!-- Condition filter -->
+                    <select id="segConditionFilter" class="form-select" style="width: auto; min-width: 130px;" aria-label="Filter by Condition">
+                        <option value="">All Conditions</option>
+                        <option value="Working">Working</option>
+                        <option value="Repairable">Repairable</option>
+                        <option value="Damaged / Non-working">Damaged / Non-working</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+
+                    <!-- Pathway filter -->
+                    <select id="segPathwayFilter" class="form-select" style="width: auto; min-width: 140px;" aria-label="Filter by Pathway">
+                        <option value="">All Pathways</option>
+                        <option value="REUSE">Reuse</option>
+                        <option value="REPAIR">Repair</option>
+                        <option value="REFURBISH">Refurbish</option>
+                        <option value="AUTHORIZED_RECYCLING">Authorized Recycling</option>
+                        <option value="SPECIAL_HANDLING">Special Handling</option>
+                        <option value="MANUAL_REVIEW">Manual Review</option>
+                    </select>
+
+                    <!-- Status filter -->
+                    <select id="segStatusFilter" class="form-select" style="width: auto; min-width: 140px;" aria-label="Filter by Status">
+                        <option value="">All Statuses</option>
+                        <option value="Classified">Classified</option>
+                        <option value="Pending Review">Pending Review</option>
+                        <option value="Special Handling Required">Special Handling Required</option>
+                    </select>
+
+                    <button type="button" class="btn btn-outline btn-sm" id="segResetFiltersBtn">Reset</button>
+
+                    <span class="records-count-badge">
+                        Showing <strong id="segResultsCount">0</strong> items
+                    </span>
+                </div>
+            </div>
+
+            <!-- Dynamic Segregation Results Container -->
+            <div id="segregationContainer" class="reveal-on-scroll" aria-live="polite">
+                <!-- Segregation cards populated by segregation.js -->
+            </div>
+
+            <!-- Educational Section: How Smart Segregation Works -->
+            <div class="how-segregation-card reveal-on-scroll">
+                <h3>How Smart Segregation Works</h3>
+                <p>
+                    The current prototype uses rule-based classification. It evaluates the registered category and reported condition to recommend a potential next step. Safety-sensitive items receive special handling guidance, and uncertain records can be flagged for manual review.
+                </p>
+                <p class="disclaimer-sub">
+                    Note: Preliminary recommendation generated by rule-based segregation. Does not replace professional inspection or instructions from an authorized recycler. Not an AI or machine-learning model.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 12: E-WASTE ECONOMIC VALUE ESTIMATOR ============ -->
+    <section class="section estimator-section" id="estimator">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">EDUCATIONAL ESTIMATE — NOT A VERIFIED MARKET QUOTE</span>
+                <h2 class="section-title">Discover the Potential Value of E-Waste</h2>
+                <p class="section-subtitle">
+                    Estimate the potential gross recovery value of registered electronic waste using recorded weights and configurable illustrative rates.
+                </p>
+            </div>
+
+            <!-- 4 Summary Cards -->
+            <div class="est-summary-grid reveal-on-scroll">
+                <div class="est-kpi-card">
+                    <span class="est-kpi-label">Eligible E-Waste Weight</span>
+                    <div class="est-kpi-val" id="estTotalWeight">0.00 kg</div>
+                    <span class="est-kpi-sub">Total weight with configured rates</span>
+                </div>
+                <div class="est-kpi-card" style="border-left: 4px solid var(--color-accent);">
+                    <span class="est-kpi-label">Estimated Gross Recovery Value</span>
+                    <div class="est-kpi-val" id="estTotalValue" style="color: var(--color-primary);">₹0.00</div>
+                    <span class="est-kpi-sub">Calculated illustrative potential</span>
+                </div>
+                <div class="est-kpi-card">
+                    <span class="est-kpi-label">Records Included</span>
+                    <div class="est-kpi-val" id="estEligibleRecords">0 of 0</div>
+                    <span class="est-kpi-sub">Items with valid weight &amp; rate</span>
+                </div>
+                <div class="est-kpi-card">
+                    <span class="est-kpi-label">Categories Assessed</span>
+                    <div class="est-kpi-val" id="estCategoriesAssessed">0</div>
+                    <span class="est-kpi-sub">Distinct active categories</span>
+                </div>
+            </div>
+
+            <!-- Toolbar: Search and Filters -->
+            <div class="records-toolbar reveal-on-scroll" style="margin-bottom: var(--space-6);">
+                <div class="records-search-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" id="estSearchInput" class="form-input records-search-input" placeholder="Search items by ID or Name..." aria-label="Search items in value estimator">
+                </div>
+                <div class="records-filters">
+                    <select id="estCategoryFilter" class="form-select" style="width: auto; min-width: 170px;" aria-label="Filter by category in estimator">
+                        <option value="">All Categories</option>
+                    </select>
+                    <select id="estStatusFilter" class="form-select" style="width: auto; min-width: 140px;" aria-label="Filter by status in estimator">
+                        <option value="">All Statuses</option>
+                        <option value="Registered">Registered</option>
+                    </select>
+                    <button type="button" class="btn btn-outline btn-sm" id="estClearFiltersBtn">Clear</button>
+                    <span id="estFilterNotice" class="badge badge-info" style="display: none;">Active Filter</span>
+                </div>
+            </div>
+
+            <!-- 2-Column Grid: Breakdown & Rate Config -->
+            <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-6); margin-bottom: var(--space-8);" class="reveal-on-scroll">
+                <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-6);">
+                    <!-- Column 1: Category Breakdown & Progress Chart -->
+                    <div class="rate-config-card">
+                        <h3 style="font-size: var(--fs-lg); color: var(--color-primary); margin: 0 0 var(--space-1);">Category Gross Recovery Breakdown</h3>
+                        <p class="text-muted" style="font-size: var(--fs-xs); margin-bottom: var(--space-4);">Calculated from eligible registered weights multiplied by current category rates.</p>
+                        
+                        <!-- Horizontal Bar Chart -->
+                        <div id="estCategoryChartContainer"></div>
+
+                        <!-- Category Table -->
+                        <div class="table-responsive" style="margin-top: var(--space-4); max-height: 260px; overflow-y: auto;">
+                            <table class="table-compact" style="width: 100%; font-size: var(--fs-xs);">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Items</th>
+                                        <th scope="col">Weight</th>
+                                        <th scope="col">Rate</th>
+                                        <th scope="col">Gross Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="estCategoryTbody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Rate Configuration Card -->
+                    <div class="rate-config-card">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
+                            <div>
+                                <h3 style="font-size: var(--fs-lg); color: var(--color-primary); margin: 0;">Illustrative Rate Configuration</h3>
+                                <p class="text-muted" style="font-size: var(--fs-xs); margin: 2px 0 0;">Adjust rates (₹/kg) to test valuation scenarios. Defaults are demonstration figures.</p>
+                            </div>
+                            <span class="badge badge-info">Demonstration Model</span>
+                        </div>
+
+                        <!-- Alert Box for Validation -->
+                        <div id="rateConfigAlert" style="display: none; padding: var(--space-3); border-radius: var(--radius-md); font-size: var(--fs-xs); margin: var(--space-3) 0;" role="alert"></div>
+
+                        <!-- Dynamic Rate Inputs Container -->
+                        <div id="rateConfigInputsContainer"></div>
+
+                        <div style="display: flex; gap: var(--space-3); justify-content: flex-end; margin-top: var(--space-4); flex-wrap: wrap;">
+                            <button type="button" class="btn btn-outline btn-sm" id="resetRatesBtn">Reset Defaults</button>
+                            <button type="button" class="btn btn-primary btn-sm" id="saveRatesBtn">Apply Changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item-Level Valuation Table -->
+            <div class="records-table-container reveal-on-scroll">
+                <div style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-2);">
+                    <h3 style="font-size: var(--fs-md); color: var(--color-primary); margin: 0;">Item-Level Valuation Matrix</h3>
+                    <span class="text-muted" style="font-size: var(--fs-xs);">Weight in kg &times; Configured Rate</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="records-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Collection ID</th>
+                                <th scope="col">Item &amp; Category</th>
+                                <th scope="col">Recorded Weight</th>
+                                <th scope="col">Rate (₹/kg)</th>
+                                <th scope="col">Gross Value</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="estItemsTbody"></tbody>
+                    </table>
+                </div>
+                <div id="estItemsEmpty" class="empty-state" style="display: none; padding: var(--space-6);">
+                    <p class="text-muted">No items found matching the selected filter.</p>
+                </div>
+            </div>
+
+            <!-- Expandable Formula & Limitations Box -->
+            <div class="ce-priority-alert reveal-on-scroll" style="margin-top: var(--space-6); background: var(--color-bg-alt); border-color: var(--color-border); color: var(--color-text-primary);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-accent);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <div>
+                    <h4 style="font-size: var(--fs-sm); font-weight: var(--fw-bold); color: var(--color-primary); margin: 0 0 4px;">How Is the Estimated Value Calculated?</h4>
+                    <p style="font-size: var(--fs-xs); line-height: 1.5; margin: 0 0 4px;">
+                        Formula: <code>Estimated Gross Recovery Value = &Sigma; (Recorded Total Weight in kg &times; Illustrative Rate in ₹/kg)</code>.
+                    </p>
+                    <p style="font-size: var(--fs-xs); line-height: 1.5; margin: 0;">
+                        <em>Worked Example:</em> A laptop weighing <strong>2.00 kg</strong> at an illustrative rate of <strong>₹80/kg</strong> generates an estimated value of <code>2.00 &times; 80 = ₹160.00</code>. This represents theoretical gross material recovery potential and does not account for logistics, sorting costs, depollution, or guaranteed recycler payout.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SECTION 13: LIVE ANALYTICS DASHBOARD ============ -->
+    <section class="section dashboard-section" id="dashboard" style="background: var(--color-bg-alt);">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">Prototype Data</span>
+                <h2 class="section-title">E-Cycle Analytics</h2>
+                <p class="section-subtitle">
+                    Monitor registered e-waste, segregation recommendations, and estimated recovery value using your recorded collection data.
+                </p>
+            </div>
+
+            <!-- Global Filter Bar -->
+            <div class="dash-filter-bar reveal-on-scroll">
+                <input type="text" id="dashFilterSearch" class="form-input" style="flex: 1; min-width: 180px;" placeholder="Search ID or name..." aria-label="Search dashboard records">
+                <select id="dashFilterCategory" class="form-select" style="width: auto; min-width: 150px;" aria-label="Filter dashboard by category">
+                    <option value="">All Categories</option>
+                </select>
+                <select id="dashFilterCondition" class="form-select" style="width: auto; min-width: 130px;" aria-label="Filter dashboard by condition">
+                    <option value="">All Conditions</option>
+                    <option value="Working">Working</option>
+                    <option value="Repairable">Repairable</option>
+                    <option value="Damaged / Non-working">Damaged</option>
+                    <option value="Unknown">Unknown</option>
+                </select>
+                <select id="dashFilterPathway" class="form-select" style="width: auto; min-width: 140px;" aria-label="Filter dashboard by pathway">
+                    <option value="">All Pathways</option>
+                    <option value="REUSE">Reuse</option>
+                    <option value="REPAIR">Repair</option>
+                    <option value="REFURBISH">Refurbish</option>
+                    <option value="AUTHORIZED_RECYCLING">Recycle</option>
+                    <option value="SPECIAL_HANDLING">Special Handling</option>
+                    <option value="MANUAL_REVIEW">Manual Review</option>
+                </select>
+                <button type="button" class="btn btn-outline btn-sm" id="dashClearFiltersBtn">Clear</button>
+                <span id="dashFilteredCount" class="records-count-badge">0 of 0 records</span>
+                <span id="dashFilterActiveNotice" class="badge badge-info" style="display: none;">Filtered View</span>
+            </div>
+
+            <!-- 6 KPI Cards -->
+            <div class="dash-kpi-grid reveal-on-scroll">
+                <div class="dash-kpi-card">
+                    <span class="est-kpi-label">Registered Items</span>
+                    <div class="est-kpi-val" id="dashKpiRegistered">0</div>
+                    <span class="est-kpi-sub">Unique saved records</span>
+                </div>
+                <div class="dash-kpi-card">
+                    <span class="est-kpi-label">Total Recorded Weight</span>
+                    <div class="est-kpi-val" id="dashKpiWeight">0.00 kg</div>
+                    <span class="est-kpi-sub" id="dashKpiWeightSub">Valid registered weight</span>
+                </div>
+                <div class="dash-kpi-card">
+                    <span class="est-kpi-label">Awaiting Triage</span>
+                    <div class="est-kpi-val" id="dashKpiAwaiting">0</div>
+                    <span class="est-kpi-sub">Unclassified records</span>
+                </div>
+                <div class="dash-kpi-card" style="border-left: 3px solid #10B981;">
+                    <span class="est-kpi-label">Reuse &amp; Repair</span>
+                    <div class="est-kpi-val" id="dashKpiReuseRepair">0</div>
+                    <span class="est-kpi-sub">Life extension pathways</span>
+                </div>
+                <div class="dash-kpi-card" style="border-left: 3px solid #F59E0B;">
+                    <span class="est-kpi-label">Recycling / Hazard</span>
+                    <div class="est-kpi-val" id="dashKpiRecycleSpecial">0</div>
+                    <span class="est-kpi-sub">Material recovery &amp; safety</span>
+                </div>
+                <div class="dash-kpi-card" style="border-left: 3px solid var(--color-primary);">
+                    <span class="est-kpi-label">Gross Recovery Value</span>
+                    <div class="est-kpi-val" id="dashKpiEstimatedValue" style="color: var(--color-primary); font-size: var(--fs-xl);">₹0.00</div>
+                    <span class="est-kpi-sub" id="dashKpiValueSub">Illustrative estimate</span>
+                </div>
+            </div>
+
+            <!-- Distribution Charts Grid -->
+            <div class="dash-charts-grid reveal-on-scroll">
+                <!-- Chart 1: E-Waste by Category -->
+                <div class="dash-chart-card">
+                    <h4>E-Waste by Category</h4>
+                    <div class="dash-chart-sub">Record distribution and aggregate weights across material streams.</div>
+                    <div id="dashCatDistributionChart"></div>
+                    <p class="text-muted" id="dashCatSummaryText" style="font-size: var(--fs-xs); margin: var(--space-4) 0 0; border-top: 1px solid var(--color-border-light); padding-top: var(--space-3);">-</p>
+                </div>
+
+                <!-- Chart 2: Recommended Pathways -->
+                <div class="dash-chart-card">
+                    <h4>Recommended Pathways</h4>
+                    <div class="dash-chart-sub">Triage recommendations generated by the rule-based segregation engine.</div>
+                    <div id="dashPathwayDistributionChart"></div>
+                    <p class="text-muted" id="dashPathwaySummaryText" style="font-size: var(--fs-xs); margin: var(--space-4) 0 0; border-top: 1px solid var(--color-border-light); padding-top: var(--space-3);">-</p>
+                </div>
+
+                <!-- Chart 3: Collection Status Overview -->
+                <div class="dash-chart-card">
+                    <h4>Collection Status</h4>
+                    <div class="dash-chart-sub">Actual recorded operational statuses stored in this prototype.</div>
+                    <div id="dashStatusOverview"></div>
+                </div>
+
+                <!-- Chart 4: Estimated Value by Category -->
+                <div class="dash-chart-card">
+                    <h4>Estimated Recovery Value</h4>
+                    <div class="dash-chart-sub">Gross potential material valuation grouped by equipment category.</div>
+                    <div id="dashValueDistributionChart"></div>
+                    <p class="text-muted" style="font-size: var(--fs-xs); margin: var(--space-4) 0 0; border-top: 1px solid var(--color-border-light); padding-top: var(--space-3);">
+                        Values are educational estimates calculated using configurable illustrative rates. They are not verified market prices, actual recycler quotations, guaranteed payments, or profit.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recent Registrations & Quick Actions -->
+            <div class="records-table-container reveal-on-scroll" style="margin-bottom: var(--space-6);">
+                <div style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-2);">
+                    <h3 style="font-size: var(--fs-md); color: var(--color-primary); margin: 0;">Recent Registrations</h3>
+                    <a href="#records-section" class="btn btn-outline btn-xs">View All in Registry &rarr;</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="records-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Collection ID</th>
+                                <th scope="col">Item Name</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Weight</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Pathway</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dashRecentRegistrationsTbody"></tbody>
+                    </table>
+                </div>
+                <div id="dashRecentEmpty" class="empty-state" style="display: none; padding: var(--space-6);">
+                    <p class="text-muted">No recent registrations found in session.</p>
+                </div>
+            </div>
+
+            <!-- Quick Actions Toolbar -->
+            <div class="rate-config-card reveal-on-scroll">
+                <h4 style="font-size: var(--fs-sm); font-weight: var(--fw-bold); color: var(--color-primary); margin: 0 0 var(--space-3);">Platform Quick Actions</h4>
+                <div class="dash-quick-actions">
+                    <a href="#register" class="btn btn-primary btn-sm">Register E-Waste</a>
+                    <a href="#segregation" class="btn btn-outline btn-sm">Open Smart Segregation</a>
+                    <a href="#circular-economy" class="btn btn-outline btn-sm">Open Circular Economy</a>
+                    <a href="#estimator" class="btn btn-outline btn-sm">Open Value Estimator</a>
+                    <a href="#records-section" class="btn btn-outline btn-sm">View Collection Records</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ SECTION 14: FOOTER ============ -->
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-inner">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#hero" class="brand" aria-label="E-Cycle home">
+                        <div class="brand-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="20" cy="20" r="18" stroke="#52B788" stroke-width="2" stroke-dasharray="6 4" opacity="0.4"/>
+                                <circle cx="20" cy="20" r="12" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+                                <path d="M20 8 L23 13 L17 13 Z" fill="#52B788"/>
+                                <path d="M28.5 25 L25.5 20 L31.5 20 Z" fill="#52B788" transform="rotate(120 20 20)"/>
+                                <path d="M28.5 25 L25.5 20 L31.5 20 Z" fill="#52B788" transform="rotate(240 20 20)"/>
+                                <circle cx="20" cy="20" r="2.5" fill="#FFFFFF"/>
+                            </svg>
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-name" style="color: #fff;">E-<span style="color: #52B788;">Cycle</span></span>
+                            <span class="brand-subtitle" style="color: rgba(255, 255, 255, 0.55);">Smart E-Waste Management</span>
+                        </div>
+                    </a>
+                    <p>
+                        Smart E-Waste Collection, Segregation &amp; Recycling Platform.
+                        Turn electronic waste into valuable resources.
+                    </p>
+                </div>
+
+                <!-- Platform Links -->
+                <div>
+                    <h4>Platform</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#register">Register E-Waste</a></li>
+                        <li><a href="#segregation">Smart Segregation</a></li>
+                        <li><a href="#records-section">Collection Records</a></li>
+                    </ul>
+                </div>
+
+                <!-- Education & Circularity -->
+                <div>
+                    <h4>Circularity</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="#circular-economy">Circular Economy</a></li>
+                        <li><a href="#problem">The Challenge</a></li>
+                        <li><a href="#how-it-works">Resource Recovery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Project & Context -->
+                <div>
+                    <h4>Project</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="#about">About E-Cycle</a></li>
+                        <li><a href="#features">Feature Modules</a></li>
+                        <li><a href="#hero">Back to Top</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Educational Prototype Disclaimer (Verbatim Required) -->
+            <div class="footer-disclaimer">
+                <p>
+                    E-Cycle is an educational prototype demonstrating e-waste collection, classification,
+                    and circular economy workflows. Actual collection and recycling depend on suitable
+                    authorized service providers.
+                </p>
+            </div>
+
+            <!-- Bottom Bar with dynamic year -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2026</span> E-Cycle. Built for a sustainable future.</p>
+                <p>Formative Assessment &mdash; E-Waste Management</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ ACCESSIBLE CLASSIFICATION DETAILS MODAL ============ -->
+    <div class="modal-overlay" id="segregationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h3 id="modalTitle">Classification &amp; Handling Details</h3>
+                <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close details modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-grid-2">
+                    <div class="modal-field">
+                        <span class="modal-field-label">Collection ID</span>
+                        <span class="modal-field-val" id="modalId">-</span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-field-label">Date Registered</span>
+                        <span class="modal-field-val" id="modalCreatedAt">-</span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-field-label">Item Name</span>
+                        <span class="modal-field-val" id="modalItemName">-</span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-field-label">Category</span>
+                        <span class="modal-field-val" id="modalCategory">-</span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-field-label">Quantity &bull; Weight</span>
+                        <span class="modal-field-val" id="modalQtyWeight">-</span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-field-label">Reported Condition</span>
+                        <span class="modal-field-val" id="modalCondition">-</span>
+                    </div>
+                </div>
+
+                <div class="modal-recommendation-box">
+                    <div class="modal-rec-badge-row">
+                        <span class="modal-field-label" style="color: #166534;">Recommended Circular Pathway</span>
+                        <span id="modalPathwayBadge" class="badge">-</span>
+                    </div>
+                    <div class="modal-rec-head" id="modalRecTitle">-</div>
+                    <p class="modal-rec-desc" id="modalRecReason">-</p>
+                </div>
+
+                <div class="modal-safety-box" id="modalSafetyBox" style="display: none;" role="alert">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <div id="modalSafetyText">-</div>
+                </div>
+
+                <div class="modal-notes-box" id="modalNotesBox" style="display: none;">
+                    <strong>Item Notes:</strong>
+                    <p id="modalNotesText" style="margin: 4px 0 0; font-style: italic;">-</p>
+                </div>
+
+                <p style="font-size: var(--fs-xs); color: var(--color-text-muted); margin: 0; line-height: 1.4;">
+                    <em>Preliminary recommendation generated by rule-based segregation. Does not replace professional inspection or instructions from an authorized recycler.</em>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm" id="modalOkBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script src="js/storage.js"></script>
+    <script src="js/collection.js"></script>
+    <script src="js/segregation.js"></script>
+    <script src="js/circular.js"></script>
+    <script src="js/estimator.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
