@@ -129,16 +129,7 @@ node test_step4_segregation.js
 
 ---
 
-## 👥 Group Contribution Details (Template)
 
-| Member Name | Roll Number | Role / Responsibility | Key Contributions |
-| :--- | :--- | :--- | :--- |
-| **[Student 1 Name]** | `[Roll Number]` | Frontend Architecture & Collection | Design system, HTML structure, collection form validation, unique ID generation. |
-| **[Student 2 Name]** | `[Roll Number]` | Segregation Engine & Circular Flow | Rule-based triage engine, battery safety protocols, circular lifecycle diagram. |
-| **[Student 3 Name]** | `[Roll Number]` | Valuation & Analytics Dashboard | Economic calculation logic, rate configuration editor, KPI cards, distribution charts. |
-| **[Student 4 Name]** | `[Roll Number]` | Data Management, QA & Documentation | LocalStorage persistence, import/export handling, test suite creation, project report. |
-
----
 
 ## ⚠️ Academic Prototype Disclaimers
 
